@@ -14,7 +14,7 @@ class Window(QtWidgets.QWidget):
     def init_ui(self):
         self.setWindowTitle("last.fm Stats Viewer")
         self.setGeometry(100, 100, 800, 450)
-        background = QImage("loveless.jpg")  # A classic album. Would definitely recommend
+        background = QImage("loveless.jpg")  # To change the background, change "loveless.jpg" with your image's name.
         palette = QPalette()
         palette.setBrush(QPalette.Window, QBrush(background))
         self.setPalette(palette)
@@ -70,7 +70,7 @@ class Window(QtWidgets.QWidget):
 
     def click(self):
 
-        # This isn't the normal way to do this, but this was my first attempt to create a GUI program using PyQt5 and I
+        # This isn't the usual way to do this, but this was my first attempt to create a GUI program using PyQt5 and I
         # avoided using QMainWindow intentionally.
 
         self.username.deleteLater()
